@@ -1,12 +1,13 @@
 from django.contrib import admin
 
-from .models import (User,
-                     Categories,
+from .models import (Categories,
                      Comment,
-                     Titles,
-                     Reviews,
                      Genres,
-                     GenreTitle)
+                     GenreTitle,
+                     Reviews,
+                     Titles,
+                     User,
+                     )
 
 
 admin.site.register(User)
