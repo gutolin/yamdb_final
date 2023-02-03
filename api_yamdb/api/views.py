@@ -10,12 +10,9 @@ from rest_framework_simplejwt.tokens import AccessToken
 from reviews.models import Categories, Genres, Titles, User
 
 from .permissions import IsAdmin, IsAdminUserOrReadOnly
-from .serializers import (SignupSerializer,
-                          UserAccessSerializer,
-                          UserSerializer,
-                          CategorySerializers,
-                          GenreSerializers,
-                          TitleSerializers)
+from .serializers import (CategorySerializers, GenreSerializers,
+                          SignupSerializer, TitleSerializers,
+                          UserAccessSerializer, UserSerializer)
 
 
 class UserViewSet(viewsets.ModelViewSet):
