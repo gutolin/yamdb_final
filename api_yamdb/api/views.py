@@ -8,6 +8,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
 from reviews.models import Categories, Genres, Titles, User
+
 from .permissions import IsAdmin, IsAdminUserOrReadOnly
 from .serializers import (SignupSerializer,
                           UserAccessSerializer,
